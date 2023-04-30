@@ -65,6 +65,7 @@ body {
 }
 .decoration-nav {
   position: relative;
+  color: var(--button-color);
 }
 .decoration-nav::after {
 content: "";
@@ -446,7 +447,9 @@ bottom: -1px;
   border: 1px solid #e7e9fc;
   padding: 12px 24px;
   border-radius: 4px;
-  transition: background-color var(--transition-duration-funs),
+  transition:
+  color var(--transition-duration-funs,)
+  background-color var(--transition-duration-funs),
   box-shadow var(--transition-duration-funs),
   color var(--transition-duration-funs),
   border var(--transition-duration-funs);
@@ -483,9 +486,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 background-color: var(--color-logo);
 color: var(--third-color);
-padding-top: 40px;
-padding-left: 32px;
-padding-right: 32px;
+padding: 40px 32px;
   display: block;
   position: absolute;
   width: 100%;
@@ -494,8 +495,8 @@ padding-right: 32px;
   top: 0;
   overflow: auto;
   transform: translate(0, 100%);
-  transition: transform var(--transition-duration-funs),
-  box-shadow var(--transition-duration-funs) ;
+  transition:box-shadow var(--transition-duration-funs),
+   transform var(--transition-duration-funs);
 }
 .projects-portfolio-item:hover .overlay {
   transform: translate(0, 0);
