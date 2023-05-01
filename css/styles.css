@@ -499,7 +499,6 @@ body {
   top: 0;
   overflow: auto;
   transform: translate(0, 100%);
-  transform: translateY(0%);
   transition: transform var(--transition-duration-funs);
 }
 .projects-portfolio-item:focus .overlay,
