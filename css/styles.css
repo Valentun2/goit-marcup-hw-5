@@ -503,9 +503,9 @@ body {
   transform: translate(0, 100%);
   transition: transform var(--transition-duration-funs);
 }
-.projects-portfolio-item:hover .overlay,
-.projects-portfolio-item:focus .overlay {
-  transform: translateY(0%)
+.projects-portfolio-link:hover .overlay,
+.projects-portfolio-link:focus .overlay {
+  transform: translateY(0%);
 }
 
 .projects-portfolio-link {
