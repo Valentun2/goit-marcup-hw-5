@@ -78,16 +78,7 @@ body {
   position: absolute;
   bottom: -1px;
 }
-.decoration-nav-portfolio::after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  display: block;
-  background-color: var(--button-color);
-  position: absolute;
-  bottom: -1px;
-}
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -365,8 +356,8 @@ body {
   border: 1px solid var(--customers-icon);
   align-items: center;
   justify-content: center;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-duration-funs)
+    color var(--transition-duration-funs)
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -440,10 +431,10 @@ body {
 /*               button-portfolio            */
 .portfolio-item {
   display: block;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-duration-funs)
+    background-color var(--transition-duration-funs)
+    border-color var(--transition-duration-funs)
+    box-shadow var(--transition-duration-funs)
 }
 .section-portfolio {
   padding: 96px 0 120px;
@@ -461,10 +452,10 @@ body {
   border: 1px solid #e7e9fc;
   padding: 12px 24px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration-funs)
+    background-color var(--transition-duration-funs)
+    border-color var(--transition-duration-funs)
+    box-shadow var(--transition-duration-funs)
 }
 .btn-portolio {
 }
@@ -515,6 +506,7 @@ body {
 .projects-portfolio-item:focus .overlay {
   
   transform: translateY(0%);
+  transform: translateY(0%)
 }
 
 .projects-portfolio-link {
