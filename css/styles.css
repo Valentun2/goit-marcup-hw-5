@@ -514,7 +514,7 @@ body {
 .projects-portfolio-item:focus .overlay,
 .projects-portfolio-item:hover .overlay {
   
-  transform: translateY(0%);
+
 }
 
 .projects-portfolio-link {
